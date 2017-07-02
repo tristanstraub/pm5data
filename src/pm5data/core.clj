@@ -18,16 +18,19 @@
 (defn read-word [content index]
   (+ (* 256 (get content index)) (get content (inc index))))
 
-(comment (let [content (pm5data.core/read-log-bin)]
-           {:time-of-day [{:hour   (read-byte content 0x09)
-                           :minute (read-byte content 0x0a)}
-                          ]
-            :results
-            (for [i (range 4)]
-              (let [offset (* 32 i)]
-                {:total-tenths-second (read-word content (+ 0x16 offset))
-                 :total-meters        (read-word content (+ 0x1a offset))
-                 :meters              (read-word content (+ 0x12 offset))
+(defn decode []
+  (let [content (pm5data.core/read-log-bin)]
+    {:time-of-day [{:hour   (read-byte content 0x09)
+                    :minute (read-byte content 0x0a)}
+                   ]
+     :results
+     (for [i (range 4)]
+       (let [offset (* 32 i)]
+         {:total-tenths-second (read-word content (+ 0x16 offset))
+          :total-meters        (read-word content (+ 0x1a offset))
+          :meters              (read-word content (+ 0x12 offset))
 
-                 :strokes-per-minute  (read-word content (+ 0x14 offset))})
-              )}))
+          :strokes-per-minute  (read-word content (+ 0x14 offset))})
+       )}))
+
+#_ (decode)
