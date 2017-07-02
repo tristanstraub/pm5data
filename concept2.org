@@ -1,0 +1,10 @@
+Concept2 Utility - Version 7.06.15
+
+Log Data for:,A
+|   |      |           |             |              | Total Workout Results |        |         |                | Split or Work Interval Results |        |     |            | Results Calculated by Formulas |        |      | Interval Rest Results |        |            |
+|   | Name | Date      | Time of Day | Workout Name | Time                  | Meters | Avg SPM | Avg Heart Rate |                           Time | Meters | SPM | Heart Rate |                          /500m | Cal/hr | Watt | Time                  | Meters | Heart Rate |
+|   |      |           |             |              |                       |        |         |                |                                |        |     |            |                                |        |      |                       |        |            |
+|   | A    | 3/07/2017 |       06:51 |      0:10:06 | 10:06.9               |   2159 |      20 |              0 |                                |        |     |            |                        02:20.5 |    733 |  126 |                       |        |            |
+|   | A    | 3/07/2017 |       06:51 |      0:10:06 |                       |        |         |                |                        05:00.0 |   1025 |  26 |          0 |                        02:26.3 |    684 |  112 |                       |        |            |
+|   | A    | 3/07/2017 |       06:51 |      0:10:06 |                       |        |         |                |                        10:00.0 |   1115 |  27 |          0 |                        02:14.5 |    794 |  144 |                       |        |            |
+|   | A    | 3/07/2017 |       06:51 |      0:10:06 |                       |        |         |                |                        10:06.9 |     20 |   9 |          0 |                        02:52.5 |    534 |   68 |                       |        |            |
